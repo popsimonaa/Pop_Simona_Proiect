@@ -1,0 +1,43 @@
+﻿@page
+@model Pop_Simona_Proiect.Pages.Programari.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>ProgramareMedic</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ProgramareMedic.NumeMedic)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProgramareMedic.NumeMedic)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ProgramareMedic.Specializare)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProgramareMedic.Specializare)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ProgramareMedic.PretConsult)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProgramareMedic.PretConsult)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ProgramareMedic.DataConsult)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProgramareMedic.DataConsult)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.ProgramareMedic.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
